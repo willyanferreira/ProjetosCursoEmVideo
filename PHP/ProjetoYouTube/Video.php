@@ -50,7 +50,7 @@ class Video implements AcoesVideo{
 
     #Métodos simples
     public function play(){
-    $this->setRepro(true);
+        $this->setRepro(true);
     }
     public function pause(){
         $this->setRepro(false);
