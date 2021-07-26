@@ -56,7 +56,7 @@ class Video implements AcoesVideo{
         $this->setRepro(false);
     }
     public function like(){
-        $this->setCurt() ++;
+        $this->curtidas ++;
 
     }
 }
