@@ -15,25 +15,25 @@ abstract class Pessoa{
     public function setNome($nome){
         $this->nome = $nome;
     }
-    public funciton getNome(){
+    public function getNome(){
         return $this->nome;
     }
     public function setIdade($idade){
         $this->idade = $idade;
     }
-    public funciton getIdade(){
+    public function getIdade(){
         return $this->idade;
     }
     public function setSexo($sexo){
         $this->sexo = $sexo;
     }
-    public funciton getSexo(){
+    public function getSexo(){
         return $this->sexo;
     }
     public function setXP($xp){
         $this->xp = $xp;
     }
-    public funciton getXP(){
+    public function getXP(){
         return $this->xp;
     }
     #Métodos simples
