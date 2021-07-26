@@ -1,4 +1,6 @@
 <?php
+require "AcoesVideo.php";
+
 class Video implements AcoesVideo{
     #Atríbutos
     private $titulo;
@@ -47,8 +49,15 @@ class Video implements AcoesVideo{
     }
 
     #Métodos simples
-    public function play();
-    public function pause();
-    public function like();
+    public function play(){
+    $this->setRepro(true);
+    }
+    public function pause(){
+        $this->setRepro(false);
+    }
+    public function like(){
+        $this->setCurt() ++;
+
+    }
 }
 ?>
