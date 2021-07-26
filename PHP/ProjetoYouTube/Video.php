@@ -24,7 +24,8 @@ class Video implements AcoesVideo{
         return $this->titulo;
     }
     public function setAva($ava){
-        $this->avaliacao = $ava;
+        $media = ($this->avaliacao + $ava) / $this->views;
+        $this->avaliacao = $media;
     }
     public function getAva(){
         return $this->avaliacao;
