@@ -15,8 +15,11 @@ print_r($user);
 
 $vis[0] = new Visualizacao($user[0], $v[1]);
 $vis[1] = new Visualizacao($user[1], $v[1]);
+$vis[2] = new Visualizacao($user[1], $v[2]);
 $vis[0]->avaliar();
 $vis[1]->avaliarPor(85);
+$vis[0]->avaliarPor(85);
+$vis[2]->avaliar();
 print_r($vis);
 
 ?>
