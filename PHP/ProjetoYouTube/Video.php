@@ -11,11 +11,16 @@ class Video implements AcoesVideo{
 
     #Métodos especiais
     public function __construct($titulo){
-        $this->setTitulo($titulo);
-        $this->setAva(1);
-        $this->setViews(0);
-        $this->setCurt(0);
-        $this->setRepro(false);
+        // $this->setTitulo($titulo);
+        // $this->setAva(1);
+        // $this->setViews(0);
+        // $this->setCurt(0);
+        // $this->setRepro(false);
+        $this->titulo = $titulo;
+        $this->avaliacao = 1;
+        $this->views = 0;
+        $this->curtidas = 0;
+        $this->reproduzindo = false;
     }
     public function setTitulo($titulo){
         $this->titulo = $titulo;
