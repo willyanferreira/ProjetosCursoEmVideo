@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Open+Sans&display=swap');
+@font-face {
+    font-family: 'fonteLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+div#interface{
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+}
+header#cabecalho img{
+    position: absolute;
+    left: 83%;
+    top: 80px;
+}
+header#cabecalho{
+    border-bottom: 1px solid #606060;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0 100px;
+}
+header#cabecalho h1{
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-family: 'fonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+header#cabecalho h2{
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+    color: #888888;
+    font-size: 15pt;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* foto com legenda*/
+.foto_legenda img{
+    width: 100%;
+    height: 100%;
+}
+.foto_legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+.foto_legenda figcaption{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.foto_legenda figcaption:hover{
+    opacity: 1;
+    transition: 3s;
+}
+
+/*Formatação menu*/
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    right: 70px;
+}
+nav#menu li{
+    padding: 10px;
+    margin: 2px;
+    display: inline-block;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+nav#menu li:hover{
+    background-color: #606060;
+    transition: 1s;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    text-decoration: none;
+    color: #000;
+}
+nav#menu a:hover{
+    color: #fff;
+}
+section#corpo{
+    float: left;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border-right: 1px solid #606060;
+}
+aside#lateral{
+    padding: 10px;
+    float: right;
+    display: block;
+    width: 45%;
+}
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
+table{
+    border: 1px solid #606060;
+    border-collapse: collapse;
+    text-align: center;
+}
+table tr{
+}
+table td{
+    border: 1px solid #606060;
+    padding: 10px;
+}
